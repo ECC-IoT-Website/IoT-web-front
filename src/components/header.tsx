@@ -11,7 +11,7 @@ export const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState<boolean>(false);
 
   return (
-    <div className="flex items-center justify-between p-2 border-b border-gray-300">
+    <div className="flex items-center justify-between p-2 border-b border-gray-300 bg-white">
       <h1><a href="/" className="flex gap-1 items-center font-bold"><img src="src/assets/nyariot-icon.svg" alt="ニャリオットのアイコン" />ECC_IoT部</a></h1>
 
       {/* モバイルのナビゲーション */}
