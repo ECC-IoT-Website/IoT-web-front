@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='flex flex-col min-h-screen bg-[#FEFCE8]'>
       <Header />
-      <main className='flex-grow w-full max-w-5xl mx-auto px-4 flex justify-center'>
+      <main className='flex-grow w-full max-w-[1440px] mx-auto px-4 flex justify-center'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/member' element={<Member />} />
