@@ -4,7 +4,6 @@ import { GoTrophy } from "react-icons/go";
 import { GoCpu } from "react-icons/go";
 import { TbNotes } from "react-icons/tb";
 import '../App.css'
-import { IconContext } from "react-icons";
 export const Home = () => {
   return (
     <div className="flex flex-col">
@@ -13,7 +12,6 @@ export const Home = () => {
           私たちの活動
         </p>
         <div className="flex wrap justify-center">
-          <IconContext.Provider value={{ color: "#CA8A04" }}>
             <Card icon={<GoPerson />}
               title="チーム開発"
               description="多様な専門分野を持つメンバーが協力して、IoTシステムの企画から実装まで一貫して取り組んでいます。"
@@ -29,7 +27,6 @@ export const Home = () => {
               description="センサーデバイス、マイコン制御、クラウド連携まで、IoTの全領域をカバーした実践的な開発を行っています。"
               colorcode="#D97706"
             />
-          </IconContext.Provider>
             <Card icon={<TbNotes />}
               title="技術発信"
               description="SNSや技術ブログを通じて開発過程や技術知見を積極的に発信し、IoTコミュニティに貢献しています。"
