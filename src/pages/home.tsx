@@ -8,11 +8,11 @@ import '../App.css'
 export const Home = () => {
   return (
     <div className="flex flex-col">
-      <div className="m-4">
-        <h2 className="text-5xl font-bold text-center">
+      <div>
+        <h2 className="my-8 text-5xl font-bold text-center">
           ECC_IoT部
         </h2>
-        <p className=" m-4 text-center text-gray-500">
+        <p className="max-w-4xl mx-auto text-center text-gray-500">
           IoT技術とプログラミングを駆使して、未来のスマート社会を創造する学生団体です。センサー技術、データ分析、クラウド連携など最新技術で革新的なソリューションを開発しています。(仮)
         </p>
         <div className="flex justify-center">
