@@ -5,17 +5,18 @@ type ButtonProps = {
     bgcolor: string;
     fontcolor: string;
     width: number;
+    height: number;
 };
-export const Button: FunctionComponent<ButtonProps> = ({title, bgcolor, fontcolor, width}: ButtonProps) => {
+export const Button: FunctionComponent<ButtonProps> = ({title, bgcolor, fontcolor, width, height}: ButtonProps) => {
   return (
     <button 
       style={{
         backgroundColor: bgcolor,
         width: `${width}px`,
-        height: "44px",
+        height: `${height}px`
       }}
-    className={"border-solid border rounded-3xl border-yellow-400 p-2 m-[30px]"}>
-        <p style={{ color: fontcolor}} className={`text-1xl text-center font-bold content-center`}>
+    className={"border-solid border rounded-2xl border-yellow-400"}>
+        <p style={{ color: fontcolor}} className={`text-1xl text-center font-bold`}>
             {title}
         </p>
     </button>
