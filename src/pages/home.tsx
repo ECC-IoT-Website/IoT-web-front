@@ -58,12 +58,11 @@ export const Home = () => {
             description="SNSや技術ブログを通じて開発過程や技術知見を積極的に発信し、IoTコミュニティに貢献しています。"
           />
         </div>
-        <div className="bg-white w-full flex flex-col">
+        <div className="bg-white max-w-full w-full flex flex-col">
           <div className="flex">
             <h2 className="text-2xl p-10 w-full">
               最新のプロジェクト
             </h2>
-
             <div className="m-[30px]">
               <Button
                 title="もっと見る"
@@ -75,12 +74,24 @@ export const Home = () => {
               </Button>
             </div>
           </div>
-          <div>
+          <div className="flex p-10 gap-10 overflow-x-scroll">
             <NewProject
               image="../src/assets/react.svg"
-              title="スマート農業システム"
-              desc="最新のIoT技術を活用して開発された実用的なシステムです。センサーデータの収集から分析まで一貫して実装しています。"
-              tag="IoT">
+              title="仮のプロジェクト"
+              desc="制作中！"
+              tag="わあ">
+            </NewProject>
+            <NewProject
+              image="../src/assets/react.svg"
+              title="仮のプロジェクト"
+              desc="制作中！制作中！"
+              tag="わあ">
+            </NewProject>
+            <NewProject
+              image="../src/assets/react.svg"
+              title="仮のプロジェクト"
+              desc="制作中！制作中！"
+              tag="わあ">
             </NewProject>
           </div>
         </div>
@@ -88,7 +99,7 @@ export const Home = () => {
         <p className="m-8 text-center text-2xl">
           最新情報
         </p>
-        <div className="border-solid border rounded-3xl border-yellow-400 bg-white">
+        <div className="border-solid border rounded-3xl border-yellow-400 bg-white m-10">
           <div className="text-center mx-auto p-8">
             <h2 className="text-2xl font-bold">
               公式X(旧Twitter)
@@ -96,7 +107,7 @@ export const Home = () => {
             <p>
               イベントやハッカソン、部活動の様子などを発信中！
             </p>
-            <iframe src={"https://ecccomp.net/IoT/x"} className="text-center w-full h-[500px]">
+            <iframe src={"https://ecccomp.net/IoT/x"} className="mx-auto w-full h-[500px] max-w-4xl">
             </iframe>
           </div>
         </div>
