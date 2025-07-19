@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="md:flex justify-around">
           <div className="basis-1/4">
             <h1><a href="/" className="flex gap-1  font-bold text-lg my-3"><img src="src/assets/nyariot-icon.svg" alt="ニャリオットのアイコン" />ECC_IoT部</a></h1>
-            <p className="text-gray-400 w-8/12">なんか一言でECC_IoT部の概要をここに書きます。なんか一言でECC_IoT部の概要をここに書きます。なんか一言でECC_IoT部の概要をここに書きます。</p>
+            <p className="text-gray-400 w-8/12">ECC_IoT部は、大阪・中崎にあるECCコンピューター専門学校の学生団体です。</p>
           </div>
           <div className="basis-1/4">
             <p className="my-3">クイックリンク</p>
