@@ -5,4 +5,6 @@ export type Member = {
   position?: string;
   profileImage?: string;
   description?: string;
+  githubName?: string;
+  xUserName?: string;
 };
