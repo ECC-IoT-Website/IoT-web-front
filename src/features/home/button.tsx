@@ -6,8 +6,9 @@ type ButtonProps = {
     fontcolor: string;
     width: number;
     height: number;
+    onClick: ()=>void;
 };
-export const Button: FunctionComponent<ButtonProps> = ({title, bgcolor, fontcolor, width, height}: ButtonProps) => {
+export const Button: FunctionComponent<ButtonProps> = ({title, bgcolor, fontcolor, width, height, onClick}: ButtonProps) => {
   return (
     <button 
       style={{
@@ -15,10 +16,12 @@ export const Button: FunctionComponent<ButtonProps> = ({title, bgcolor, fontcolo
         width: `${width}px`,
         height: `${height}px`
       }}
-    className={"border-solid border rounded-2xl border-yellow-400"}>
-        <p style={{ color: fontcolor}} className={`text-1xl text-center font-bold`}>
-            {title}
-        </p>
+      className={"border-solid border rounded-2xl border-yellow-400"}
+      onClick={onClick}
+    >
+      <p style={{ color: fontcolor}} className={`text-1xl text-center font-bold`}>
+          {title}
+      </p>
     </button>
   );
 }

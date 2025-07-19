@@ -5,34 +5,41 @@ import { GoPerson } from "react-icons/go";
 import { GoTrophy } from "react-icons/go";
 import { GoCpu } from "react-icons/go";
 import { TbNotes } from "react-icons/tb";
+import { useNavigate } from "react-router-dom";
 import '../App.css'
+
 export const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col">
       <div>
         <h2 className="my-8 text-5xl font-bold text-center">
           ECC_IoT部
         </h2>
-        <p className="max-w-4xl mx-auto text-center text-gray-500">
-          IoT技術とプログラミングを駆使して、未来のスマート社会を創造する学生団体です。センサー技術、データ分析、クラウド連携など最新技術で革新的なソリューションを開発しています。(仮)
-        </p>
-        <div className="flex justify-center">
-          <div className="m-[30px]">
+        <div className="lg:max-w-4xl mx-auto text-center text-gray-500 space-y-2">
+          <p>ECC_IoT部は、大阪・中崎にあるECCコンピューター専門学校の学生団体です。</p>
+          <p>積極的にハッカソンや展示会に参加し、学生ならではのユニークな作品やアイデアを形にしています。</p>
+        </div>
+        <div className="flex justify-center items-center gap-4 my-8">
+          <div>
             <Button
               title="プロジェクトを見る"
               bgcolor="#EAB308"
               fontcolor="#ffffff"
               width={190}
               height={44}
+              onClick={()=>navigate('/project')}
             />
           </div>
-          <div className="m-[30px]">
+          <div>
             <Button
               title="運営メンバー紹介"
               fontcolor="#EAB308"
               bgcolor="#ffffff"
               width={150}
               height={44}
+              onClick={()=>navigate('/member')}
             />
           </div>
         </div>
@@ -70,11 +77,12 @@ export const Home = () => {
                 fontcolor="#EAB308"
                 width={100}
                 height={44}
+                onClick={()=>navigate('/project')}
               >
               </Button>
             </div>
           </div>
-          <div className="flex p-10 gap-10 overflow-x-scroll">
+          <div className="flex flex-wrap p-10 gap-10">
             <NewProject
               image="../src/assets/react.svg"
               title="仮のプロジェクト"
@@ -99,7 +107,7 @@ export const Home = () => {
         <p className="m-8 text-center text-2xl">
           最新情報
         </p>
-        <div className="border-solid border rounded-3xl border-yellow-400 bg-white m-10">
+        <div className="border-solid border rounded-3xl border-yellow-400 bg-white my-10">
           <div className="text-center mx-auto p-8">
             <h2 className="text-2xl font-bold">
               公式X(旧Twitter)
