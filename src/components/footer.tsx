@@ -23,7 +23,7 @@ export const Footer = () => {
             <ul className="text-gray-400 ">
               <li className="my-1.5">メールアドレス：ecc.IoT.23@gmail.com</li>
               <li className="my-1.5">活動場所：ECCコンピュータ専門学校 ３号館５階</li>
-              <li className="my-1.5">活動時間：平日 17:00-22:00</li>
+              <li className="my-1.5">活動時間：平日 17:00-20:00</li>
             </ul>
           </div>
           <div className="basis-1/4">
